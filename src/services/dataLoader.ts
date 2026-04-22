@@ -30,7 +30,11 @@ export const loadArrayData = async <T>(url: string, forceRefresh: boolean = fals
         // mas o getCachedData já garante que ele está limpo se expirou.
         // Se for forçado (true), a lógica já passa para o fetch.
         
-        const response = await fetch(url);
+        const finalUrl = forceRefresh ? `${url}?t=${Date.now()}` : url;
+
+        const response = await fetch(finalUrl, {
+         cache: forceRefresh ? 'no-store' : 'default'
+        });
         if (!response.ok) {
             throw new Error(`Falha ao buscar dados de ${url}: ${response.statusText}`);
         }
@@ -87,7 +91,11 @@ export async function loadSingleObjectData<T>(url: string, forceRefresh: boolean
 
     // 2. BUSCA DE REDE (Se o cache falhou, expirou OU forceRefresh é true)
     try {
-        const response = await fetch(url);
+        const finalUrl = forceRefresh ? `${url}?t=${Date.now()}` : url;
+
+        const response = await fetch(finalUrl, {
+            cache: forceRefresh ? 'no-store' : 'default'
+        });
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }

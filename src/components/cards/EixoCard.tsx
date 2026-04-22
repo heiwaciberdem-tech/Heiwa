@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import type { IConteudoEixo } from '../../types';
 
 
-export const EixoCard: React.FC<{ item: IConteudoEixo }> = ({ item }) => {
+export const EixoCard: React.FC<{ item: IConteudoEixo }> = ({item }) => {
   return (
     <motion.div
       className="
