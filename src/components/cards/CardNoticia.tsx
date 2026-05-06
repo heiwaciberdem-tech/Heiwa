@@ -8,11 +8,12 @@ interface CardNoticiaProps {
   item: INoticia;
 }
 
-const CardNoticia: React.FC<CardNoticiaProps> = ({ item }) => {
-  console.log('URL da Imagem:', item.imagemUrl);
+const CardNoticia: React.FC<CardNoticiaProps> = ({item}) => {
+  console.log('URL da Imagem:', item.imagemurl);
+  console.log('Link da notícia:', item.linkurl);
   return (
     <motion.a
-      href={item.linkUrl}
+      href={item.linkurl}
       target="_blank"
       rel="noopener noreferrer"
       className="block bg-white rounded-lg shadow-md p-6 transform transition duration-400 hover:scale-105 hover:shadow-lg cursor-pointer"
@@ -25,9 +26,9 @@ const CardNoticia: React.FC<CardNoticiaProps> = ({ item }) => {
     
     <h3 className="text-xl font-bold text-gray-800 mb-2">{item.titulo}</h3>
     
-    {item.imagemUrl && (
+    {item.imagemurl && (
       <img 
-        src={item.imagemUrl} 
+        src={item.imagemurl} 
         alt={item.titulo} 
         className="
           w-full 

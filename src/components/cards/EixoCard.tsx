@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import type { IConteudoEixo } from '../../types';
 
 
-export const EixoCard: React.FC<{ item: IConteudoEixo }> = ({item }) => {
+export const EixoCard: React.FC<{item: IConteudoEixo}> = ({item}) => {
   return (
     <motion.div
       className="
@@ -29,19 +29,19 @@ export const EixoCard: React.FC<{ item: IConteudoEixo }> = ({item }) => {
           className="
             w-full 
             h-full 
-            object-cover /* Preenche o espaço, corta se necessário (uniformidade) */
+            object-scale-down /* Preenche o espaço, corta se necessário (uniformidade) */
           " 
         />
       </div>
 
       {/* 2. Conteúdo e Botão */}
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-2xl font-bold text-gray-800 mb-3 leading-snug line-clamp-2">
+        <h3 className="text-2xl font-bold text-gray-800 mb-3 leading-snug line-clamp-4">
           {item.titulo}
         </h3>
         
         {/* 3. Descrição (Permite que o card cresça para acomodar o texto) */}
-        <p className="text-gray-700 text-base mb-6 flex-grow line-clamp-4">
+        <p className="text-gray-900 text-base mb-6 flex-grow line-clamp-4">
           {item.descricao}
         </p>
         

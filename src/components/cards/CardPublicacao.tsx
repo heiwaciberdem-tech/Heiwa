@@ -25,7 +25,7 @@ const CardPublicacao: React.FC<CardPublicacaoProps> = ({ item }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="p-6 flex flex-col h-full">
-        <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2">{item.titulo}</h3>
+        <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-5">{item.titulo}</h3>
         
         {/* Metadados */}
         <div className="text-sm text-gray-600 mb-4 space-y-1">

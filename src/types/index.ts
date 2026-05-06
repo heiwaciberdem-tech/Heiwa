@@ -68,16 +68,17 @@ export interface INoticia {
   titulo: string;
   resumo: string;
   data: number;
-  linkUrl: string;
-  imagemUrl?: string; 
+  linkurl: string;
+  imagemurl: string; 
 }
 
 // Interface para Conteúdo dos Eixos
 export interface IConteudoEixo {
-  id: string;
-  titulo: string;
-  descricao: string;
   imagemUrl: string;
+  titulo: string;
   acaoUrl: string;
+  id: string;
+  descricao: string; 
+  
 }
 
