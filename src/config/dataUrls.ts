@@ -20,7 +20,7 @@ const VISUALIZACOES_FORM_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/A
 const PUBLICACOES_FORM_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7VQ9IEKd6jGWitoCqz4D1Lszu3V5jMRMwQo13G7hRKss_b7JotUGW6vpKUP26WhJa/exec';
 const EIXOS_APPS_SCRIPT_BASE_URL = 'https://script.google.com/macros/s/AKfycbxP8CIPLope6_qT-Ka1p37KGqRGo-iEKXvhPGBxMRRinp4naYiges_-6Y8Qen-Hmi6uxw/exec';
 const SOBRE_PROJETO_APPS_SCRIPT_BASE_URL = 'https://script.google.com/macros/s/AKfycbxZmTnFcFqgThBGwDpykGCuldEl7L4ltTdxtmyU9Ibcu1YPaDHF2jq4b3f5PoszZErlAQ/exec';
-const NOTICIAS_FORM_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxQedeLvrqAymrOnORWQjAqpONM5350FefGqoGPEkUu6_T6c37kCn4rSj7BEeoUnZ5qWw/exec';
+const NOTICIAS_FORM_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzmPM8Gs8Y6D7wUMgSe18LUOgSwR-370UqGD_me_tpUFdn_hC3vpKRfHMIYXzV8RvaRUw/exec';
 
 // Exportando as URLs como um objeto do tipo DataUrls
 export const dataUrls: DataUrls = {
