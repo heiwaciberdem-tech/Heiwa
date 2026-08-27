@@ -15,6 +15,7 @@ const Header: React.FC = () => {
   // Array de links para facilitar a renderização
   const navLinks = [
     { to: "/noticias", label: "Notícias" },
+    { to: "/jornada", label: "Jornada" },
     { to: "/publicacoes", label: "Publicações" },
     { to: "/membros", label: "Membros" },
     { to: "/eixos", label: "Eixos" },

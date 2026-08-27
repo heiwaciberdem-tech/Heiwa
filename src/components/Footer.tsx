@@ -1,3 +1,5 @@
+// src/components/Footer.tsx (sem alterações - mantido como está)
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaEnvelope, FaGlobe, FaMapMarkerAlt } from 'react-icons/fa';
@@ -56,7 +58,7 @@ const Footer: React.FC = () => {
               <a href="https://github.com/seu-perfil-github" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center">
                 <FaGithub className="mr-2" size={14} /> GitHub
               </a>
-              <a href="https://ciberdem.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center">
+              <a href="https://ciberdem.mack.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center">
                 <FaGlobe className="mr-2" size={14} /> CIBERDEM
               </a>
             </div>
@@ -76,7 +78,7 @@ const Footer: React.FC = () => {
                 <Link to="/membros" className="hover:text-white transition-colors duration-300">Membros</Link>
               </li>
               <li>
-                <Link to="/debates" className="hover:text-white transition-colors duration-300">Eixos</Link>
+                <Link to="/eixos" className="hover:text-white transition-colors duration-300">Eixos</Link>
               </li>
               <li>
                 <Link to="/sobre" className="hover:text-white transition-colors duration-300">Sobre</Link>
@@ -110,8 +112,9 @@ const Footer: React.FC = () => {
                 <p className="text-red-300 text-xs">{error}</p>
               ) : financiadores.length > 0 ? (
                 <div className="grid grid-cols-2 gap-2">
+
                   {financiadores.map((financiador) => (
-                    <div key={financiador.id} className="bg-verdeMedio/20 rounded p-2 flex items-center justify-center hover:bg-verdeMedio/30 transition-colors duration-300">
+                    <div key={financiador.id} className="bg-verdeMedio/20 rounded p-2 flex items-center justify-center hover:bg-verdeMedio/30 transition-colors duration-300 cursor-pointer">
                       <CardEntidade item={financiador} />
                     </div>
                   ))}

@@ -12,6 +12,7 @@ import EixosPage from './pages/eixos/EixosPage';
 import EixoContentPage from './pages/eixos/EixoContentPage';
 import NoticiasPage from './pages/NoticiasPage';
 import SobrePage from './pages/Sobre';
+import JornadaPage from './pages/JornadaPage';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} /> {/* Página inicial */}
+            <Route path="/jornada" element={<JornadaPage />} />   {/* Página deJornada Usuario */}
             <Route path="/noticias" element={<NoticiasPage />} /> {/* Página de Notícias */}
             <Route path="/visualizacoes" element={<VisualizacoesPage />} />   {/* Página de Visualizações */}
             <Route path="/sobre" element={<SobrePage />} />   {/* Página de Visualização específica */}

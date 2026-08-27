@@ -46,13 +46,15 @@ export interface IPessoaCard {
   tipo: 'membroatual' | 'membroanterior'; 
 }
 
+
+
 // Interface para Financiadores - lida da aba 'Financiadores'
 export interface IEntidadeCard {
   id: string; 
   nome: string;
   logoUrl?: string;
+  link?: string;
   compact?: boolean; 
-  
 }
 
 // Interface principal para o estado da página 'Sobre'
