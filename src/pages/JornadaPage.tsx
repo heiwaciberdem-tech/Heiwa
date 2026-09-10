@@ -149,7 +149,7 @@ const JornadaPage: React.FC = () => {
             <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-4xl">
           <p className="text-sm text-gray-700 leading-relaxed">
             <span className="font-semibold text-gray-800">
-              Sobre este Laboratório:
+              Sobre esta seção:
             </span>{' '}
             <span className="italic text-gray-500">
               [TEXTO PENDENTE]

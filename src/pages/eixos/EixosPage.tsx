@@ -11,28 +11,28 @@ const eixosData = [
     id: 1,
     title: 'Curadoria',
     subtitle: 'Identificação, seleção e organização de datasets de conteúdos de redes sociais.',
-    imageUrl: 'https://ik.imagekit.io/8h7kfljfc/heiwa/%C3%8Dcone_de_Rede_Minimalista_Verde-removebg-preview.png?updatedAt=1756776632494',
+    imageUrl: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/1ea270ca-8c48-40fb-b070-b39232979ad7.png',
     linkTo: '/eixos/curadoria'
   },
   {
     id: 2,
     title: 'Extração e Limpeza',
     subtitle: 'Ferramentas de extração e tratamento de dados de redes sociais.',
-    imageUrl: 'https://ik.imagekit.io/8h7kfljfc/heiwa/Grade_de_Grade_Neon_Verde-removebg-preview.png?updatedAt=1756776632445',
+    imageUrl: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/ChatGPT%20Image%20Sep%2010,%202026,%2008_06_58%20PM.png',
     linkTo: '/eixos/extracaoLimpeza'
   },
   {
     id: 3,
     title: 'Mineração de Argumentos',
     subtitle: 'Modelos e ferramentas de mineração de argumentos em conteúdos de redes sociais.',
-    imageUrl: 'https://ik.imagekit.io/8h7kfljfc/heiwa/Martelo%20e%20machado%20cruzados.png?updatedAt=1756776448938',
+    imageUrl: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Gemini_Generated_Image_i5nmpoi5nmpoi5nm.jpg?updatedAt=1789079991712',
     linkTo: '/eixos/mineracaoArgumentos'
   },
   {
     id: 4,
     title: 'Visualização de Discussões',
     subtitle: 'Ferramentas de visualização de discussões em redes sociais.',
-    imageUrl: 'https://ik.imagekit.io/8h7kfljfc/heiwa/ChatGPT%20Image%20Sep%201,%202025,%2010_26_51%20PM.png?updatedAt=1756776448920',
+    imageUrl: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Gemini_Generated_Image_viu3abviu3abviu3-removebg-preview.png',
     linkTo: '/eixos/visualizacaoDiscussoes'
   },
   {
@@ -51,7 +51,7 @@ const EixosPage: React.FC = () => {
       title="Eixos do Projeto | Hub de Pesquisa Científica"
       description="Conheça os cinco eixos temáticos do projeto de pesquisa: Curadoria, Extração, Mineração de Argumentos, Visualização e Aspectos Éticos e Legais."
     />
-      <div className="container mx-auto max-w-5xl text-center">
+      <div className="container mx-auto max-w-5xl text-center border-b border-gray-300 pb-8 mb-12">
         {/* Título da Página */}
         <motion.h1
           className="text-4xl font-bold text-gray-800 mb-12"
