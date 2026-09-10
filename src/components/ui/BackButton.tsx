@@ -8,11 +8,11 @@ interface BackButtonProps {
   to?: string; // Caminho opcional, padrão é '/eixos'
 }
 
-const BackButton: React.FC<BackButtonProps> = ({ to = '/eixos' }) => {
+const BackButton: React.FC<BackButtonProps> = ({ }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(to);
+    navigate(-1);
   };
 
   return (
@@ -38,6 +38,3 @@ const BackButton: React.FC<BackButtonProps> = ({ to = '/eixos' }) => {
 };
 
 export default BackButton;
-
-// NOTA: Certifique-se de que a página onde este botão será usado (EixoContentPage)
-// esteja dentro de um RouterProvider/BrowserRouter para que o 'useNavigate' funcione.

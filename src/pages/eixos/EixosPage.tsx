@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Seo from '../../components/Seo';
 
 
+
 // Dados dos eixos do projeto com imagens e links de placeholder
 const eixosData = [
   {

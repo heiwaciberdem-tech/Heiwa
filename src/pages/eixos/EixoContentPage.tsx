@@ -11,7 +11,8 @@ import { loadArrayData } from '../../services/dataLoader';
 import LoadingCircle from '../../components/ui/LoadingDots';
 import ReloadButton from '../../components/ui/ReloadButton'; 
 import BackButton from '../../components/ui/BackButton';
-import { EixoCard } from '../../components/cards/EixoCard';
+import EixoCard from '../../components/cards/EixoCard';
+
 // NOTA: useSync FOI REMOVIDO PARA EVITAR CONFLITOS DE CACHE
 
 

@@ -168,7 +168,7 @@ const HomePage: React.FC = () => {
                 CardNoticia,
                 "Notícias",
                 "/noticias",
-                "" // Sem cor de fundo ou outra cor
+                "" 
             )}
         </div>
     );
