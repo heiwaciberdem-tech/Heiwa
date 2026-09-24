@@ -32,7 +32,7 @@ const eixosData = [
     id: 4,
     title: 'Visualização de Discussões',
     subtitle: 'Ferramentas de visualização de discussões em redes sociais.',
-    imageUrl: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Gemini_Generated_Image_viu3abviu3abviu3-removebg-preview.png',
+    imageUrl: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Gemini_Generated_Image_fayjg0fayjg0fayj.jpg?updatedAt=1789079992413',
     linkTo: '/eixos/visualizacaoDiscussoes'
   },
   {

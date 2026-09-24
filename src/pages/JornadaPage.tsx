@@ -6,7 +6,6 @@ import type { IConteudoEixo } from '../types';
 import LoadingCircle from '../components/ui/LoadingDots';
 import CarouselSlider from '../components/ui/CarouselSlider';
 import EixoCard from '../components/cards/EixoCard';
-import InfoTooltip from '../components/ui/InfoTooltip';
 
 // --- ÍCONES DAS ETAPAS ---
 const stepIcons = {
@@ -15,23 +14,11 @@ const stepIcons = {
   visualization: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Captura_de_tela_2026-08-27_174110-removebg-preview.png',
 };
 
-// =========================================================================================
-// TEXTOS DOS TOOLTIPS — AGUARDANDO TEXTOS DEFINITIVOS DA PROFESSORA RENATA
-// Substituir o conteúdo de cada `tooltip` abaixo quando os textos finais chegarem.
-// =========================================================================================
-const tooltipsPlaceholder = {
-  intro: 'TEXTO PENDENTE — explicação geral sobre o que é o Laboratório Heiwa e o que o pesquisador pode fazer aqui.',
-  dataset: 'TEXTO PENDENTE — explicação sobre o que é um dataset e como escolher uma base para iniciar a análise.',
-  modelo: 'TEXTO PENDENTE — explicação sobre o que é um modelo de mineração e como escolher uma ferramenta.',
-  visualizacao: 'TEXTO PENDENTE — explicação sobre as formas de visualização dos resultados da análise.',
-};
-
 // --- CONFIGURAÇÃO DAS SEÇÕES ---
 interface SecaoConfig {
   chave: 'curadoria' | 'mineracaoArgumentos' | 'visualizacaoDiscussoes';
   titulo: string;
   descricao: string;
-  tooltip: string;
   icon: string;
   verMaisLink: string;
 }
@@ -40,24 +27,22 @@ const secoes: SecaoConfig[] = [
   {
     chave: 'curadoria',
     titulo: 'Datasets',
-    descricao: 'Explore as bases de dados disponíveis para iniciar sua análise.',
-    tooltip: tooltipsPlaceholder.dataset,
+    descricao: 'Explore bases de dados disponíveis com dados brutos ou anotados.',
     icon: stepIcons.dataset,
     verMaisLink: '/eixos/curadoria',
   },
   {
     chave: 'mineracaoArgumentos',
-    titulo: 'Modelos de Mineração',
-    descricao: 'Ferramentas para realizar a mineração de argumentos.',
-    tooltip: tooltipsPlaceholder.modelo,
+    titulo: 'Modelos e Ferramentas de Mineração de Argumentos',
+    descricao:
+      'Modelos e ferramentas disponíveis para a tarefa de mineração de argumentos em conteúdos de redes sociais.',
     icon: stepIcons.model,
     verMaisLink: '/eixos/mineracaoArgumentos',
   },
   {
     chave: 'visualizacaoDiscussoes',
-    titulo: 'Visualizações',
-    descricao: 'Formas de visualizar os resultados da análise.',
-    tooltip: tooltipsPlaceholder.visualizacao,
+    titulo: 'Ferramentas de Visualização de Argumentos',
+    descricao: 'Ferramentas para visualizar os resultados da análise.',
     icon: stepIcons.visualization,
     verMaisLink: '/eixos/visualizacaoDiscussoes',
   },
@@ -104,27 +89,42 @@ const JornadaPage: React.FC = () => {
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       {/* ===================== CABEÇALHO ===================== */}
       <div className="mb-10">
-        <div className="flex items-center gap-3 mb-3">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-            Laboratório Heiwa
-          </h1>
-          <InfoTooltip text={tooltipsPlaceholder.intro} size={20} />
-        </div>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
+          Laboratório Heiwa
+        </h1>
 
+        {/* Subtítulo atualizado (sugestão 1) */}
         <p className="text-xl text-gray-600 max-w-3xl">
-          Explore os recursos disponíveis em cada etapa da sua análise.
+          Explore os recursos disponíveis para análise e visualização de argumentos em redes sociais.
         </p>
 
-        {/* Texto introdutório explicativo */}
-        {/* PENDENTE: substituir pelo texto definitivo da professora Renata */}
-        <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-4xl">
+        {/* Texto introdutório (sugestão 2) */}
+        <div className="mt-6 p-5 bg-blue-50 border border-blue-200 rounded-lg max-w-4xl">
+          <p className="text-sm text-gray-700 leading-relaxed mb-3">
+            Nesta página estão disponibilizados recursos desenvolvidos pelo projeto{' '}
+            <span className="font-semibold">HEIWA</span> que apoiam as etapas principais
+            de um processo de mineração e visualização de argumentos em redes sociais:
+          </p>
+
+          <ul className="text-sm text-gray-700 leading-relaxed space-y-2 mb-3 list-disc list-inside">
+            <li>
+              <span className="font-semibold">Curadoria:</span> datasets brutos ou
+              anotados para treinamento de modelos de mineração de argumentos.
+            </li>
+            <li>
+              <span className="font-semibold">Mineração de argumentos:</span> modelos
+              e códigos que implementam soluções de mineração de argumentos.
+            </li>
+            <li>
+              <span className="font-semibold">Visualização:</span> ferramentas e
+              códigos desenvolvidos para apresentar visualizações da argumentação
+              analisada.
+            </li>
+          </ul>
+
           <p className="text-sm text-gray-700 leading-relaxed">
-            <span className="font-semibold text-gray-800">
-              Sobre este Laboratório:
-            </span>{' '}
-            <span className="italic text-gray-500">
-              [TEXTO PENDENTE]
-            </span>
+            Para usar os recursos, você pode realizar o download dos itens que desejar,
+            instalá-los e usá-los em seu ambiente individual de desenvolvimento ou execução.
           </p>
         </div>
       </div>
@@ -135,27 +135,16 @@ const JornadaPage: React.FC = () => {
 
         return (
           <section key={secao.chave} className="mb-16">
-            {/* Cabeçalho da seção com tooltip ao lado do título */}
+            {/* Cabeçalho da seção (sem tooltip, conforme sugestão) */}
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src={secao.icon} alt={secao.titulo} className="w-6 h-6" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                 {secao.titulo}
               </h2>
-              <InfoTooltip text={secao.tooltip} size={18} />
             </div>
             <p className="text-gray-600 mb-6">{secao.descricao}</p>
-            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-4xl">
-          <p className="text-sm text-gray-700 leading-relaxed">
-            <span className="font-semibold text-gray-800">
-              Sobre esta seção:
-            </span>{' '}
-            <span className="italic text-gray-500">
-              [TEXTO PENDENTE]
-            </span>
-          </p>
-        </div>
 
             {/* Slider */}
             {itens.length === 0 ? (
