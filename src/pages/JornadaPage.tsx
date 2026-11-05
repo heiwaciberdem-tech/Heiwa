@@ -11,7 +11,7 @@ import EixoCard from '../components/cards/EixoCard';
 const stepIcons = {
   dataset: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Captura_de_tela_2026-08-27_173104-removebg-preview.png',
   model: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Captura_de_tela_2026-08-27_173513-removebg-preview.png',
-  visualization: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Captura_de_tela_2026-08-27_174110-removebg-preview.png',
+  visualization: 'https://ik.imagekit.io/csktgzt59/Heiwa%20IMG/New%20Folder/icones%20mvp2/Gemini_Generated_Image_fayjg0fayjg0fayj__4_-removebg-preview.png',
 };
 
 // --- CONFIGURAÇÃO DAS SEÇÕES ---
